@@ -1,0 +1,415 @@
+{
+  "_fv": 43,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 270,
+    "height": 202,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 18,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "entitymodel",
+        "data": {
+          "entityModel": {
+            "name": "PlayerModel"
+          },
+          "scale": 30,
+          "rotationX": 0,
+          "followMouseMovement": false,
+          "x": 105,
+          "y": 107
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_player_name",
+          "text": {
+            "fixedValue": "",
+            "name": "PlayerName"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 87,
+          "y": 26
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_player_exp_return",
+          "text": {
+            "fixedValue": "",
+            "name": "PlayerEXPReturn"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 249,
+          "y": 26
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_player_exp_curve",
+          "text": {
+            "fixedValue": "",
+            "name": "PlayerEXPCurve"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 168,
+          "y": 26
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_stat_points_return",
+          "text": {
+            "fixedValue": "",
+            "name": "StatPointsReturn"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 168,
+          "y": 53
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_str",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnSTR"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 168,
+          "y": 62
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_dex",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnDEX"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 168,
+          "y": 71
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_con",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnCON"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 168,
+          "y": 80
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_int",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnINT"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 168,
+          "y": 89
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_wis",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnWIS"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 168,
+          "y": 98
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_cha",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnCHA"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 168,
+          "y": 107
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_plus_btn",
+          "image": "plus_btn.png",
+          "hoveredImage": "plus_btn_hov.png",
+          "onClick": {
+            "name": "SPSpendSTR"
+          },
+          "x": 249,
+          "y": 62
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_plus_btn1",
+          "image": "plus_btn.png",
+          "hoveredImage": "plus_btn_hov.png",
+          "onClick": {
+            "name": "SPSpendDEX"
+          },
+          "x": 249,
+          "y": 71
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_plus_btn2",
+          "image": "plus_btn.png",
+          "hoveredImage": "plus_btn_hov.png",
+          "onClick": {
+            "name": "SPSpendCON"
+          },
+          "x": 249,
+          "y": 80
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_plus_btn3",
+          "image": "plus_btn.png",
+          "hoveredImage": "plus_btn_hov.png",
+          "onClick": {
+            "name": "SPSpendINT"
+          },
+          "x": 249,
+          "y": 89
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_plus_btn4",
+          "image": "plus_btn.png",
+          "hoveredImage": "plus_btn_hov.png",
+          "onClick": {
+            "name": "SPSpendWIS"
+          },
+          "x": 249,
+          "y": 98
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_plus_btn5",
+          "image": "plus_btn.png",
+          "hoveredImage": "plus_btn_hov.png",
+          "onClick": {
+            "name": "SPSpendCHA"
+          },
+          "x": 249,
+          "y": 107
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_hp",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnHP"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 258,
+          "y": 53
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_atk",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnATK"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 258,
+          "y": 62
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_atk_speed",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnATKSpeed"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 258,
+          "y": 71
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_min_btn",
+          "image": "min_btn.png",
+          "hoveredImage": "min_btn_hov.png",
+          "onClick": {
+            "name": "SPRtrSTR"
+          },
+          "x": 231,
+          "y": 62
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_min_btn1",
+          "image": "min_btn.png",
+          "hoveredImage": "min_btn_hov.png",
+          "onClick": {
+            "name": "SPRtrDEX"
+          },
+          "x": 231,
+          "y": 71
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_min_btn2",
+          "image": "min_btn.png",
+          "hoveredImage": "min_btn_hov.png",
+          "onClick": {
+            "name": "SPRtrCON"
+          },
+          "x": 231,
+          "y": 80
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_min_btn3",
+          "image": "min_btn.png",
+          "hoveredImage": "min_btn_hov.png",
+          "onClick": {
+            "name": "SPRtrINT"
+          },
+          "x": 231,
+          "y": 89
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_min_btn4",
+          "image": "min_btn.png",
+          "hoveredImage": "min_btn_hov.png",
+          "onClick": {
+            "name": "SPRtrWIS"
+          },
+          "x": 231,
+          "y": 98
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_min_btn5",
+          "image": "min_btn.png",
+          "hoveredImage": "min_btn_hov.png",
+          "onClick": {
+            "name": "SPRtrCHA"
+          },
+          "x": 231,
+          "y": 107
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_xp_to_next_lvl",
+          "text": {
+            "fixedValue": "",
+            "name": "XPToNextLVL"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 249,
+          "y": 35
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

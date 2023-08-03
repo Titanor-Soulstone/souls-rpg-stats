@@ -1,0 +1,13 @@
+{
+  "gamerule.expPower.description": "How much the EXP Curve increase every Level Up",
+  "gamerule.maxLVL": "EXP Max Level",
+  "gamerule.maxLVL.description": "-1 and below for infinite levels, 0 and 1 to disable lvl up, 2 and above to set max level",
+  "gamerule.sPPerLVL": "EXP SP Per Level",
+  "gamerule.expBase": "EXP Base",
+  "gamerule.expBase.description": "Amount of EXP to get from LVL 1 to 2",
+  "key.soul_rpg.stats_hotkey": "Player Stats",
+  "gamerule.expPower": "EXP Power",
+  "item.soul_rpg.stats_orb": "Stats Orb",
+  "item.soul_rpg.crystalised_sp": "Crystalised SP",
+  "gamerule.sPPerLVL.description": "Amount of skill points per level"
+}

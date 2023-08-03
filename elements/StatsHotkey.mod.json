@@ -1,0 +1,12 @@
+{
+  "_fv": 43,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "P",
+    "keyBindingName": "Player Stats",
+    "keyBindingCategoryKey": "ui",
+    "onKeyPressed": {
+      "name": "StatsOpen"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "_fv": 43,
+  "_type": "command",
+  "definition": {
+    "commandName": "soulexp",
+    "permissionLevel": "No requirement",
+    "argsxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"args_start\" deletable=\"false\" x=\"157\" y=\"53\"><next><block type=\"string\"><field name=\"type\">word</field><field name=\"name\">cmd</field><statement name=\"args\"><block type=\"entity\"><field name=\"name\">player</field><field name=\"type\">player</field><statement name=\"args\"><block type=\"call_procedure\"><field name=\"procedure\">SoulEXPProcedure</field></block></statement></block></statement></block></next></block></xml>"
+  }
+}

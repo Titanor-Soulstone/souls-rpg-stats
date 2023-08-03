@@ -1,0 +1,12 @@
+{
+  "_fv": 43,
+  "_type": "gamerule",
+  "definition": {
+    "type": "Number",
+    "displayName": "EXP Base",
+    "description": "Amount of EXP to get from LVL 1 to 2",
+    "category": "PLAYER",
+    "defaultValueLogic": false,
+    "defaultValueNumber": 50
+  }
+}

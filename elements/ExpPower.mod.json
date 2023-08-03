@@ -1,0 +1,12 @@
+{
+  "_fv": 43,
+  "_type": "gamerule",
+  "definition": {
+    "type": "Number",
+    "displayName": "EXP Power",
+    "description": "How much the EXP Curve increase every Level Up",
+    "category": "PLAYER",
+    "defaultValueLogic": false,
+    "defaultValueNumber": 2
+  }
+}

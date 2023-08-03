@@ -1,0 +1,946 @@
+{
+  "mod_elements": [
+    {
+      "name": "PlayerModel",
+      "type": "procedure",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_model",
+      "metadata": {
+        "return_type": "entity",
+        "files": [
+          "src/main/java/net/mcreator/soulrpg/procedures/PlayerModelProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PlayerStats",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_stats",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/soulrpg/network/PlayerStatsButtonMessage.java",
+          "src/main/java/net/mcreator/soulrpg/world/inventory/PlayerStatsMenu.java",
+          "src/main/java/net/mcreator/soulrpg/client/gui/PlayerStatsScreen.java"
+        ]
+      }
+    },
+    {
+      "name": "PlayerName",
+      "type": "procedure",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_name",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/soulrpg/procedures/PlayerNameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "StatsHotkey",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stats_hotkey",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/soulrpg/network/StatsHotkeyMessage.java"
+        ]
+      }
+    },
+    {
+      "name": "StatsOpen",
+      "type": "procedure",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stats_open",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/soulrpg/procedures/StatsOpenProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "StatsOrb",
+      "type": "item",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stats_orb",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/soulrpg/item/StatsOrbItem.java",
+          "src/main/resources/assets/soul_rpg/models/item/stats_orb.json"
+        ]
+      }
+    },
+    {
+      "name": "PlayerEXP",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_exp_change",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/soulrpg/procedures/PlayerEXPProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "amount",
+            "type": "number"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PlayerEXPReturn",
+      "type": "procedure",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_exp_return",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/soulrpg/procedures/PlayerEXPReturnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PlayerEXPCurve",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_exp_curve",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/soulrpg/procedures/PlayerEXPCurveProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "StatPointsReturn",
+      "type": "procedure",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stat_points_return",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/soulrpg/procedures/StatPointsReturnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ReturnSTR",
+      "type": "procedure",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_str",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/soulrpg/procedures/ReturnSTRProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ReturnDEX",
+      "type": "procedure",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_dex",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/soulrpg/procedures/ReturnDEXProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ReturnCON",
+      "type": "procedure",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_con",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/soulrpg/procedures/ReturnCONProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ReturnINT",
+      "type": "procedure",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_int",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/soulrpg/procedures/ReturnINTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ReturnWIS",
+      "type": "procedure",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_wis",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/soulrpg/procedures/ReturnWISProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ReturnCHA",
+      "type": "procedure",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_cha",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/soulrpg/procedures/ReturnCHAProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SPSpendSTR",
+      "type": "procedure",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sp_spend_str",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/soulrpg/procedures/SPSpendSTRProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SPSpendDEX",
+      "type": "procedure",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sp_spend_dex",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/soulrpg/procedures/SPSpendDEXProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SPSpendCON",
+      "type": "procedure",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sp_spend_con",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/soulrpg/procedures/SPSpendCONProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SPSpendINT",
+      "type": "procedure",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sp_spend_int",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/soulrpg/procedures/SPSpendINTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SPSpendWIS",
+      "type": "procedure",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sp_spend_wis",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/soulrpg/procedures/SPSpendWISProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SPSpendCHA",
+      "type": "procedure",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sp_spend_cha",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/soulrpg/procedures/SPSpendCHAProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ExpBase",
+      "type": "gamerule",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "exp_base",
+      "metadata": {
+        "files": [],
+        "type": "number"
+      }
+    },
+    {
+      "name": "ExpPower",
+      "type": "gamerule",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "exp_power",
+      "metadata": {
+        "files": [],
+        "type": "number"
+      }
+    },
+    {
+      "name": "StatsOrbCraft",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stats_orb_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/soul_rpg/recipes/stats_orb_craft.json"
+        ]
+      }
+    },
+    {
+      "name": "StatEffects",
+      "type": "procedure",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stat_effects",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/soulrpg/procedures/StatEffectsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ReturnATK",
+      "type": "procedure",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_atk",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/soulrpg/procedures/ReturnATKProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ReturnATKSpeed",
+      "type": "procedure",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_atk_speed",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/soulrpg/procedures/ReturnATKSpeedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ReturnHP",
+      "type": "procedure",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_hp",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/soulrpg/procedures/ReturnHPProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CrystalisedSPRightclicked",
+      "type": "procedure",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystalised_sp_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/soulrpg/procedures/CrystalisedSPRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CrystalisedSP",
+      "type": "item",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystalised_sp",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/soul_rpg/models/item/crystalised_sp.json",
+          "src/main/java/net/mcreator/soulrpg/item/CrystalisedSPItem.java"
+        ]
+      }
+    },
+    {
+      "name": "SPRtrSTR",
+      "type": "procedure",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sp_rtr_str",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/soulrpg/procedures/SPRtrSTRProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SPRtrDEX",
+      "type": "procedure",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sp_rtr_dex",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/soulrpg/procedures/SPRtrDEXProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SPRtrCON",
+      "type": "procedure",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sp_rtr_con",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/soulrpg/procedures/SPRtrCONProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SPRtrINT",
+      "type": "procedure",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sp_rtr_int",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/soulrpg/procedures/SPRtrINTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SPRtrWIS",
+      "type": "procedure",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sp_rtr_wis",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/soulrpg/procedures/SPRtrWISProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SPRtrCHA",
+      "type": "procedure",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sp_rtr_cha",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/soulrpg/procedures/SPRtrCHAProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "XPToNextLVL",
+      "type": "procedure",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xp_to_next_lvl",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/soulrpg/procedures/XPToNextLVLProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MaxLVL",
+      "type": "gamerule",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "max_lvl",
+      "metadata": {
+        "files": [],
+        "type": "number"
+      }
+    },
+    {
+      "name": "SPPerLVL",
+      "type": "gamerule",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sp_per_lvl",
+      "metadata": {
+        "files": [],
+        "type": "number"
+      }
+    },
+    {
+      "name": "PlayerJoin",
+      "type": "procedure",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_join",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/soulrpg/procedures/PlayerJoinProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SoulEXP",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soul_exp",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/soulrpg/command/SoulEXPCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "SoulEXPProcedure",
+      "type": "procedure",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soul_exp_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/soulrpg/procedures/SoulEXPProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EXPOver",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "exp_over",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/soulrpg/client/screens/EXPOverOverlay.java"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "EXP",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0.0"
+    },
+    {
+      "name": "LEVEL",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0.0"
+    },
+    {
+      "name": "STAT_POINTS",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0.0"
+    },
+    {
+      "name": "TITLE",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"ROOKIE\""
+    },
+    {
+      "name": "NAME",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"\""
+    },
+    {
+      "name": "STR",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "1.0"
+    },
+    {
+      "name": "DEX",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "1.0"
+    },
+    {
+      "name": "CON",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "1.0"
+    },
+    {
+      "name": "INTEL",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "1.0"
+    },
+    {
+      "name": "WIS",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "1.0"
+    },
+    {
+      "name": "CHA",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "1.0"
+    },
+    {
+      "name": "PLAYER_FIRST_JOIN",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    }
+  ],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "gamerule.expPower.description": "How much the EXP Curve increase every Level Up",
+      "gamerule.maxLVL": "EXP Max Level",
+      "gamerule.maxLVL.description": "-1 and below for infinite levels, 0 and 1 to disable lvl up, 2 and above to set max level",
+      "gamerule.sPPerLVL": "EXP SP Per Level",
+      "gamerule.expBase": "EXP Base",
+      "gamerule.expBase.description": "Amount of EXP to get from LVL 1 to 2",
+      "key.soul_rpg.stats_hotkey": "Player Stats",
+      "gamerule.expPower": "EXP Power",
+      "item.soul_rpg.stats_orb": "Stats Orb",
+      "item.soul_rpg.crystalised_sp": "Crystalised SP",
+      "gamerule.sPPerLVL.description": "Amount of skill points per level"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "soul_rpg",
+    "modName": "Soul RPG Stats",
+    "version": "0.0.1",
+    "description": "Basic RPG Stats for Minecraft",
+    "author": "Titanor, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.19.2",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.soulrpg",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300224119
+}

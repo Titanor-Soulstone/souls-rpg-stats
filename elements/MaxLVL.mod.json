@@ -1,0 +1,12 @@
+{
+  "_fv": 43,
+  "_type": "gamerule",
+  "definition": {
+    "type": "Number",
+    "displayName": "EXP Max Level",
+    "description": "-1 and below for infinite levels, 0 and 1 to disable lvl up, 2 and above to set max level",
+    "category": "PLAYER",
+    "defaultValueLogic": false,
+    "defaultValueNumber": 200
+  }
+}
