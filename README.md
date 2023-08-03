@@ -1,1 +1,1 @@
-"# souls-rpg-stats" 
+# souls-rpg-stats
